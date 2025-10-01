@@ -53,3 +53,54 @@
       h1.title{font-size:20px}
       .avatar{height:100px}
     }
+    .player {
+  padding: 12px;
+  border: 4px solid #d0b58a;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.player h3 {
+  font-size: 14px;
+  margin: 8px 0;
+  text-align: center;
+}
+
+.player p {
+  font-size: 13px;
+  margin: 4px 0;
+}
+
+.avatar {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border: 4px solid #6b4d28;
+  border-radius: 6px;
+}
+
+/* робимо щоб кнопки вирівнювались */
+.player p:last-child {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  background: var(--dirt);
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 4px solid #5a3f20;
+  font-family: 'Press Start 2P', monospace;
+  cursor: pointer;
+  box-shadow: 4px 6px 0 rgba(0,0,0,0.2);
+  text-align: center;
+  width: fit-content;
+}
+
+.btn:hover {
+  background: #704122;
+}

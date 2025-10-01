@@ -1,5 +1,4 @@
-// Smooth scroll
-    document.querySelectorAll('[data-scroll]').forEach(btn=>{
+ document.querySelectorAll('[data-scroll]').forEach(btn=>{
       btn.addEventListener('click',()=>{
         const id = btn.getAttribute('data-scroll');
         document.getElementById(id).scrollIntoView({behavior:'smooth'});
