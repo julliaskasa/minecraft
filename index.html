@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="uk">
 <head>
   <meta charset="utf-8">
@@ -8,19 +8,27 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="hero">
-    <div class="container">
-      <h1 class="title">MINECRAFT — СВІТ БЛОКІВ</h1>
-      <p class="lead">Міні-сайт про гру Minecraft: що це, історія створення, хто її створив і відомі гравці.</p>
-      <nav class="nav">
-        <button class="btn" data-scroll="about">Про гру</button>
-        <button class="btn secondary" data-scroll="history">Історія</button>
-        <button class="btn" data-scroll="creator">Творець</button>
-        <button class="btn secondary" data-scroll="players">Гравці</button>
-      </nav>
+
+  <!-- ------------------ NAVBAR ------------------ -->
+  <nav class="navbar"> 
+    <div class="container nav-container">
+      <a href="#" class="logo">MINECRAFT</a>
+      <ul class="nav-links">
+        <li><a href="#about">Про гру</a></li>
+        <li><a href="#history">Історія</a></li>
+        <li><a href="#creator">Творець</a></li>
+        <li><a href="#players">Гравці</a></li>
+      </ul>
+      <a href="https://www.minecraft.net/uk-ua/get-minecraft" target="_blank" class="btn nav-btn">Скачати</a>
     </div>
+  </nav>
+
+  <!-- ------------------ HERO ------------------ -->
+  <header class="hero">
+    <!-- Теперь hero пустой, только фон -->
   </header>
 
+  <!-- ------------------ MAIN ------------------ -->
   <main class="container">
     <section id="about" class="card">
       <h2>Про гру</h2>
@@ -69,7 +77,13 @@
           <button class="btn" data-player="hermit">Детальніше</button>
         </div>
       </div>
+
     </section>
+       <div class="test-btn-container" style="text-align:center; margin-bottom:20px;">
+  <p>Хочеш перевірити свої знання про Minecraft? 🧐</p>
+  <p>Давай пройдемо короткий тест та дізнаємось, наскільки ти експерт у світі блоків! 🎮</p>
+  <a href="test.html" class="btn">🧠 Пройти тест</a>
+</div>
 
     <!-- модальне вікно -->
     <div id="modal" class="modal">
@@ -80,58 +94,58 @@
     </div>
   </main>
 
+  <!-- ------------------ FOOTER ------------------ -->
   <footer class="minecraft-footer">
-  <div class="footer-top">
-    <img src="img/mojang-logo.jpg" alt="Mojang Studios" class="footer-logo" />
-    <img src="img/xbox-logo.jpg" alt="Xbox Game Studios" class="footer-logo" />
-  </div>
-
-  <div class="footer-columns">
-    <div class="footer-col">
-      <h4>Ігри</h4>
-      <ul>
-        <li><a href="#">Minecraft</a></li>
-        <li><a href="#">Minecraft Dungeons</a></li>
-        <li><a href="#">Minecraft Legends</a></li>
-        <li><a href="#">Minecraft Education</a></li>
-      </ul>
+    <div class="footer-top">
+      <img src="img/mojang-logo.jpg" alt="Mojang Studios" class="footer-logo" />
+      <img src="img/xbox-logo.jpg" alt="Xbox Game Studios" class="footer-logo" />
     </div>
 
-    <div class="footer-col">
-      <h4>Магазин</h4>
-      <ul>
-        <li><a href="#">Ринок</a></li>
-        <li><a href="#">Магазин Minecraft</a></li>
-      </ul>
+    <div class="footer-columns">
+      <div class="footer-col">
+        <h4>Ігри</h4>
+        <ul>
+          <li><a href="#">Minecraft</a></li>
+          <li><a href="#">Minecraft Dungeons</a></li>
+          <li><a href="#">Minecraft Legends</a></li>
+          <li><a href="#">Minecraft Education</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Магазин</h4>
+        <ul>
+          <li><a href="#">Ринок</a></li>
+          <li><a href="#">Магазин Minecraft</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Спільнота</h4>
+        <ul>
+          <li><a href="#">Портал для творців</a></li>
+          <li><a href="#">Кар’єра в Mojang</a></li>
+          <li><a href="#">Minecraft у кіно</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Підтримка</h4>
+        <ul>
+          <li><a href="#">Поради новачкам</a></li>
+          <li><a href="#">Зв’язатися з нами</a></li>
+        </ul>
+      </div>
     </div>
 
-    <div class="footer-col">
-      <h4>Спільнота</h4>
-      <ul>
-        <li><a href="#">Портал для творців</a></li>
-        <li><a href="#">Кар’єра в Mojang</a></li>
-        <li><a href="#">Minecraft у кіно</a></li>
-      </ul>
+    <div class="footer-bottom">
+      <p>© 2025 Mojang AB. TM Microsoft Corporation.</p>
+      <p>
+        <a href="#">Правила використання Minecraft</a> |
+        <a href="#">Керувати згодою</a>
+      </p>
     </div>
-
-    <div class="footer-col">
-      <h4>Підтримка</h4>
-      <ul>
-        <li><a href="#">Поради новачкам</a></li>
-        <li><a href="#">Зв’язатися з нами</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    <p>© 2025 Mojang AB. TM Microsoft Corporation.</p>
-    <p>
-      <a href="#">Правила використання Minecraft</a> |
-      <a href="#">Керувати згодою</a>
-    </p>
-  </div>
-</footer>
-
+  </footer>
 
   <script src="script.js"></script>
 </body>
