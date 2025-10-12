@@ -1,18 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="uk">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Тест Minecraft</title>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="test.css">
 </head>
 <body>
-  <div class="container">
-    <h1 class="title">🧩 Тест: Наскільки ти професійний майнкрафтер?</h1>
-    <p>Відповідай на кілька запитань, щоб дізнатися свій рівень!</p>
+<a href="index.html" class="home-fixed">⬅️ На головну</a>
 
-    <a href="index.html" class="btn">🏠 Повернутися на головну</a>
+  <div class="quiz-container">
+    <div class="start-screen">
+      <h1>🧩 Тест на знання Minecraft</h1>
+      <p>Перевір, наскільки добре ти знаєш світ блоків!</p>
+      <button class="start-btn">Почати тест</button>
+    </div>
+
+    <div class="question-screen" style="display:none;">
+      <h2 class="question"></h2>
+      <div class="answers"></div>
+      <button class="next-btn" style="display:none;">Далі ➡️</button>
+    </div>
+
+    <div class="result-screen" style="display:none;">
+      <h2>Результат</h2>
+      <p class="result-text"></p>
+      <button class="restart-btn">🔁 Пройти ще раз</button>
+    </div>
   </div>
+  
+
+  <script src="test.js"></script>
 </body>
 </html>
