@@ -1,13 +1,192 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Minecraft — Міні-сайт</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>hello world</h1>
-    <script src="script.js"></script>
+
+  <!-- NAVBAR -->
+  <nav class="navbar"> 
+  <div class="container nav-container">
+    <a href="index.html" class="logo">
+      <img src="img/logo.png" alt="Minecraft Logo">
+    </a>
+    <ul class="nav-links">
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="instructions.html">Інструкція</a></li>
+      <li><a href="#about">Про гру</a></li>
+      <li><a href="#history">Історія</a></li>
+      <li><a href="#creator">Творець</a></li>
+      <li><a href="#players">Гравці</a></li>
+    </ul>
+    <a href="https://www.minecraft.net/uk-ua/get-minecraft" target="_blank" class="btn nav-btn">Скачати</a>
+  </div>
+</nav>
+
+
+  <!--HERO -->
+  <header class="hero">
+    <!--hero пустой, только фон -->
+  </header>
+
+  <!--MAIN -->
+  <main class="container">
+    <section id="about" class="card">
+      <h2>Про гру</h2>
+      <p>Minecraft — це пісочниця з відкритим світом, де все складається з кубічних блоків. Гравці будують, досліджують і виживають у цьому світі.</p>
+    </section>
+
+    <section id="history" class="card">
+      <h2>Історія</h2>
+      <p>Гра створена у 2009 році Маркусом Перссоном як інді-проєкт. Пізніше її придбала компанія Microsoft, і Minecraft став глобальним феноменом.</p>
+    </section>
+
+    <section id="creator" class="card">
+      <h2>Творець</h2>
+      <p>Маркус "Notch" Перссон — шведський програміст, який створив Minecraft. Після цього він заснував студію Mojang.</p>
+    </section>
+
+    <section id="players" class="card">
+      <h2>Легендарні гравці</h2>
+      <div class="grid">
+        <div class="player">
+          <img src="img/dream.jpg" alt="Dream" class="avatar">
+          <h3>Dream</h3>
+          <p>Популярний ютубер, який прославився своїми швидкісними забігами.</p>
+          <button class="btn" data-player="dream">Детальніше</button>
+        </div>
+
+        <div class="player">
+          <img src="img/technoblade.jpg" alt="Technoblade" class="avatar">
+          <h3>Technoblade</h3>
+          <p>Легендарний PvP-гравець, відомий у всьому світі.</p>
+          <button class="btn" data-player="technoblade">Детальніше</button>
+        </div>
+
+        <div class="player">
+          <img src="img/captainsparklez.jpg" alt="CaptainSparklez" class="avatar">
+          <h3>Captain
+            Sparklez</h3>
+          <p>Автор культових Minecraft-пісень і пригодницьких карт.</p>
+          <button class="btn" data-player="cap">Детальніше</button>
+        </div>
+
+        <div class="player">
+          <img src="img/hermitCraft.jpg" alt="HermitCraft" class="avatar">
+          <h3>HermitCraft</h3>
+          <p>Велика спільнота будівельників, що створює масштабні світи.</p>
+          <button class="btn" data-player="hermit">Детальніше</button>
+        </div>
+      </div>
+
+    </section>
+       <div class="test-btn-container" style="text-align:center; margin-bottom:20px;">
+  <p>Хочеш перевірити свої знання про Minecraft? 🧐</p>
+  <p>Давай пройдемо короткий тест та дізнаємось, наскільки ти експерт у світі блоків! 🎮</p>
+  <a href="test.html" class="btn">🧠 Пройти тест</a>
+</div>
+
+    
+    <div id="modal" class="modal">
+      <div class="box">
+        <button id="closeBtn" class="close">Закрити</button>
+        <div id="modalContent"></div>
+      </div>
+    </div>
+  </main>
+
+  <section class="social-bar">
+  <div class="container">
+    <div class="social-text">підписатися на Minecraft</div>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/minecraft/" target="_blank" aria-label="Instagram" class="social-icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram">
+      </a>
+      <a href="https://www.youtube.com/minecraft" target="_blank" aria-label="YouTube" class="social-icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
+      </a>
+      <a href="https://x.com/Minecraft" target="_blank" aria-label="X" class="social-icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="X">
+      </a>
+      <a href="https://www.facebook.com/minecraft/" target="_blank" aria-label="Facebook" class="social-icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+      </a>
+      <a href="https://www.tiktok.com/@minecraft" target="_blank" aria-label="TikTok" class="social-icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046128.png" alt="TikTok">
+      </a>
+      <a href="https://open.spotify.com/artist/7i68fmsIERvgavI8Q1H09h?si=W8eaFDQWRbKHzSIaa4FSyQ&nd=1&dlsi=ccac09f3f4914675" target="_blank" aria-label="Spotify" class="social-icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111624.png" alt="Spotify">
+      </a>
+      <a href="https://discord.com/invite/minecraft" target="_blank" aria-label="Discord" class="social-icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord">
+      </a>
+      <a href="https://www.whatsapp.com/channel/0029VakYS0uKLaHg2yxV2T1p" target="_blank" aria-label="WhatsApp" class="social-icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+      </a>
+    </div>
+  </div>
+</section>
+
+  <!-- FOOTER -->
+<footer class="minecraft-footer">
+  <div class="footer-top">
+    <img src="img/mojang-logo.jpg" alt="Mojang Studios" class="footer-logo" />
+    <img src="img/xbox_logo.webp" alt="Xbox Game Studios" class="footer-logo" />
+  </div>
+
+  
+
+  <div class="footer-columns">
+    <div class="footer-col">
+      <h4>Ігри</h4>
+      <ul>
+        <li><a href="https://www.minecraft.net/" target="_blank">Minecraft</a></li>
+        <li><a href="https://www.minecraft.net/en-us/about-dungeons" target="_blank">Minecraft Dungeons</a></li>
+        <li><a href="https://www.minecraft.net/en-us/about-legends" target="_blank">Minecraft Legends</a></li>
+        <li><a href="https://education.minecraft.net/" target="_blank">Minecraft Education</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Магазин</h4>
+      <ul>
+        <li><a href="https://www.minecraft.net/en-us/store/minecraft" target="_blank">Ринок</a></li>
+        <li><a href="https://www.minecraft.net/en-us/store/minecraft" target="_blank">Магазин Minecraft</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Спільнота</h4>
+      <ul>
+        <li><a href="https://www.minecraft.net/ru-ru/creator" target="_blank">Портал для творців</a></li>
+        <li><a href="https://www.minecraft.net/ru-ru/mojang-careers" target="_blank">Кар’єра в Mojang</a></li>
+        <li><a href="https://www.minecraft.net/ru-ru/minecraft-movie" target="_blank">Minecraft у кіно</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Підтримка</h4>
+      <ul>
+        <li><a href="https://www.minecraft.net/en-us/help" target="_blank">Поради новачкам</a></li>
+        <li><a href="https://help.minecraft.net/hc/en-us/articles/4408904068621-Feedback-and-Fan-Mail" target="_blank">Зв’язатися з нами</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Mojang AB. TM Microsoft Corporation.</p>
+    <p>
+      <a href="https://www.minecraft.net/en-us/terms" target="_blank">Правила використання Minecraft</a> |
+      <a href="https://www.minecraft.net/en-us/privacy" target="_blank">Керувати згодою</a>
+    </p>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
 </body>
 </html>
