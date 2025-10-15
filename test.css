@@ -1,0 +1,89 @@
+body {
+  font-family: 'Press Start 2P', monospace;
+  background:  #313231;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.quiz-container {
+  background: #1a1a1a;
+  padding: 30px;
+  border: 5px solid #4CAF50;
+  border-radius: 15px;
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 8px 8px 0 #000;
+}
+
+button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-family: 'Press Start 2P', monospace;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.1s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.answer {
+  background: #2f7034;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid #4CAF50;
+  transition: background 0.2s;
+}
+
+.answer:hover {
+  background: #4CAF50;
+}
+
+.correct {
+  background: #6ac66a !important;
+}
+
+.wrong {
+  background: #e43e3e !important;
+}
+
+.result-screen {
+  color: #fff;
+}
+.home-fixed {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: #1a1a1a;
+  color: #4CAF50;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 2px solid #4CAF50;
+  font-family: 'Press Start 2P', monospace;
+  z-index: 100;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.home-fixed:hover {
+  background: #288311;
+  color: #000;
+  transform: scale(1.05);
+}
