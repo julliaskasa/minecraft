@@ -1,0 +1,81 @@
+
+.red-title {
+  color: #e74c3c;
+  font-size: 1.5em;
+}
+
+#answerList {
+  list-style: none;
+  padding: 0;
+}
+#answerList li {
+  margin: 0.5em 0;
+}
+#answerList button {
+  padding: 0.5em 1em;
+  font-family: 'Press Start 2P', cursive;
+  cursor: pointer;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+}
+#answerList button.correct {
+  background-color: #2ecc71;
+}
+#answerList button.wrong {
+  background-color: #e74c3c;
+}
+#feedback {
+  font-weight: bold;
+  margin-top: 1em;
+}
+#startScreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.answer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  justify-content: center;
+  margin-top: 1em;
+}
+.answer-btn {
+  padding: 0.5em 1em;
+  font-family: 'Press Start 2P', cursive;
+  cursor: pointer;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  width: 100%;
+}
+.answer-btn.correct {
+  background-color: #2ecc71;
+}
+.answer-btn.wrong {
+  background-color: #e74c3c;
+}
+.answer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  justify-content: center;
+  margin-top: 1em;
+}
+.answer-btn {
+  padding: 0.5em 1em;
+  font-family: 'Press Start 2P', cursive;
+  cursor: pointer;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  width: 100%;
+}
+.answer-btn.correct {
+  background-color: #2ecc71;
+}
+.answer-btn.wrong {
+  background-color: #e74c3c;
+}
