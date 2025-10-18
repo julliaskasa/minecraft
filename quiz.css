@@ -12,6 +12,16 @@ body {
     align-items: center; 
 }
 
+.nav-links li a {
+    background-color: black;
+    color: white;
+    border: 2px solid #ff69b4;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: inline-block; 
+    border-radius: 5px;
+}
+
 .moving-background {
     position: absolute;
     top: 0;
