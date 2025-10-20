@@ -13,18 +13,22 @@
 
   <!-- NAVBAR -->
   <nav class="navbar">
-    <div class="nav-container">
+    <div class="container nav-container">
       <a href="index.html" class="logo">
         <img src="img/logo.png" alt="Minecraft Logo">
       </a>
       <ul class="nav-links">
         <li><a href="index.html">Головна</a></li>
-        <li><a href="instructions.html">Інструкція</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Інструкція</a>
+          <div class="dropdown-content">
+            <a href="#start">Початок гри</a>
+            <a href="#build">Будівництво</a>
+            <a href="#survive">Виживання</a>
+          </div>
+        </li>
         <li><a href="quiz.html">Квіз</a></li>
         <li><a href="poradu.html">Поради</a></li>
-        <li><a href="#start">Початок гри</a></li>
-        <li><a href="#build">Будівництво</a></li>
-        <li><a href="#survive">Виживання</a></li>
       </ul>
     </div>
   </nav>
