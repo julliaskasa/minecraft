@@ -1,15 +1,15 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #1a1a1a; 
-    color: #e6e6e6; 
+    font-family: 'Press Start 2P', monospace;
+    background-color: #1a1a1a;
+    color: #e6e6e6;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
 }
 
 .nav-links li a {
@@ -18,7 +18,7 @@ body {
     border: 2px solid #ff69b4;
     padding: 10px 15px;
     text-decoration: none;
-    display: inline-block; 
+    display: inline-block;
     border-radius: 5px;
 }
 
@@ -28,31 +28,32 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden; 
+    overflow: hidden;
     z-index: -1;
 }
 
 .moving-background img {
-    position: absolute; 
-    width: 150%; 
-    height: 150%; 
+    position: absolute;
+    width: 150%;
+    height: 150%;
     object-fit: cover;
-    
-    animation: background-move 30s infinite alternate linear; 
-    
+
+    animation: background-move 30s infinite alternate linear;
+
 }
 
 @keyframes background-move {
     0% {
-        transform: translate(0, 0); 
+        transform: translate(0, 0);
     }
+
     100% {
-        transform: translate(-20%, -20%); 
+        transform: translate(-20%, -20%);
     }
 }
 
 .quiz-container {
-    background-color: #2c2c2c; 
+    background-color: #2c2c2c;
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(255, 0, 102, 0.5);
@@ -80,7 +81,7 @@ h1 {
     padding: 12px;
     margin-bottom: 10px;
     background-color: #3e3e3e;
-    color: #ff66b2; 
+    color: #ff66b2;
     border: 2px solid #ff66b2;
     border-radius: 8px;
     cursor: pointer;
@@ -90,7 +91,7 @@ h1 {
 
 .answer-options button:hover:not(:disabled) {
     background-color: #ff3399;
-    color: #1a1a1a; 
+    color: #1a1a1a;
     transform: translateY(-2px);
 }
 
@@ -116,8 +117,9 @@ h1 {
 }
 
 #result h2 {
-    color: #00ff99; 
+    color: #00ff99;
 }
+
 #result p {
     font-size: 1.1em;
     line-height: 1.5;
