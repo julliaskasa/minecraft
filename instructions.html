@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="uk">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Інструкція по Minecraft</title>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="instructions.css">
+  <script defer src="instructions.js"></script>
 </head>
-
 <body>
 
   <!-- NAVBAR -->
@@ -30,69 +30,71 @@
         <li><a href="quiz.html">Квіз</a></li>
         <li><a href="poradu.html">Поради</a></li>
       </ul>
+          <a href="https://www.minecraft.net/uk-ua/get-minecraft" target="_blank" class="btn nav-btn">Скачати</a>
     </div>
   </nav>
 
-  <!-- HERO -->
-  <header class="hero">
-    <h1 class="title" style="text-shadow: 2px 2px 0 #000; color: #fff;">Інструкція для новачків</h1>
-  </header>
+  <section class="instructions">
+    <h1>Інструкція для новачків у Minecraft</h1>
 
-  <!-- MAIN CONTENT -->
-  <main class="container">
-
-    <section id="start" class="card">
-      <h2>1️⃣ Початок гри</h2>
-      <p>Після створення світу вибери режим — виживання або креатив. У виживанні збирай ресурси руками, щоб виготовити
-        інструменти. Почни з дерева, потім створюй кам’яні та залізні предмети.</p>
-    </section>
-
-    <section id="build" class="card">
-      <h2>2️⃣ Будівництво</h2>
-      <p>Будівництво — головна частина Minecraft! Використовуй блоки, щоб створювати будинки, ферми або навіть цілі
-        міста. Експериментуй з матеріалами, як-от дерево, камінь, скло.</p>
-    </section>
-
-    <section id="survive" class="card">
-      <h2>3️⃣ Виживання</h2>
-      <p>З настанням ночі з’являються монстри — зомбі, скелети, павуки. Побудуй укриття, зроби меч або лук, і не забувай
-        про їжу. Використовуй піч, щоб приготувати їжу або переплавити руду.</p>
-    </section>
-
-    <section id="tips" class="card">
-      <h2>💡 Корисні поради</h2>
-      <ul>
-        <li>Завжди май при собі факели — темрява небезпечна.</li>
-        <li>Залізо і вугілля часто трапляються у печерах.</li>
-        <li>Якщо загубився — став блоки, щоб позначити шлях назад.</li>
-        <li>Створи ліжко, щоб відновити точку появи.</li>
-      </ul>
-    </section>
-
-    <div class="test-btn-container">
-      <p>Перевір, наскільки добре ти засвоїв основи Minecraft!</p>
-      <a href="test.html" class="btn">🧠 Пройти тест</a>
+    <div class="steps">
+      <div class="step">1️⃣ <b>Зібери ресурси:</b> добудь дерево, щоб створити перші інструменти.</div>
+      <div class="step">2️⃣ <b>Створи верстак:</b> використай 4 дерев'яні дошки для створення верстака.</div>
+      <div class="step">3️⃣ <b>Зроби інструменти:</b> почни з дерев’яних, а далі переходь до кам’яних.</div>
+      <div class="step">4️⃣ <b>Побудуй укриття:</b> першу ніч краще провести під дахом.</div>
+      <div class="step">5️⃣ <b>Добудь їжу:</b> полюй або збирай ягоди, щоб не зголодніти.</div>
+      <div class="step">6️⃣ <b>Видобувай руду:</b> шукай залізо, вугілля та інші ресурси під землею.</div>
+      <div class="step">7️⃣ <b>Крафти броню і зброю:</b> вони допоможуть у бою з мобами.</div>
+      <div class="step">8️⃣ <b>Досліджуй світ:</b> не бійся подорожувати — пригоди чекають!</div>
     </div>
 
-  </main>
+    <h2 class="tips-title">Поради для виживання</h2>
+    <ul class="tips">
+      <li>🦇 Завжди бери факели, коли йдеш у печери.</li>
+      <li>🛏️ Створи ліжко, щоб встановити точку відродження.</li>
+      <li>🗺️ Зроби карту, щоб не заблукати.</li>
+      <li>🐷 Розводь тварин для нескінченного запасу їжі.</li>
+      <li>🛡️ Використовуй руди щоб зробити броню.</li>
+      <li>⛏️ Ніколи не копай під собою!</li>
+      <li>🔥 Завжди май відро води — воно врятує тебе від лави.</li>
+    </ul>
+  </section>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Контакти</h4>
+        <p>Email: support@minecraftworld.com</p>
+        <p>Телефон: +380 97 123 45 67</p>
+      </div>
 
-  <!-- FOOTER -->
-  <footer class="minecraft-footer">
-    <div class="footer-top">
-      <img src="img/mojang-logo.jpg" alt="Mojang Studios" class="footer-logo" />
-      <img src="img/xbox_logo.webp" alt="Xbox Game Studios" class="footer-logo" />
-    </div>
+      <div class="footer-section">
+        <h4>Спільнота</h4>
+        <ul>
+          <li><a href="https://discord.com/invite/minecraft">Discord</a></li>
+          <li><a href="https://x.com/Minecraft">X(Twitter)</a></li>
+          <li><a href="https://www.youtube.com/minecraft">YouTube</a></li>
+        </ul>
+      </div>
 
-    <div class="footer-bottom">
-      <p>© 2025 Mojang AB. TM Microsoft Corporation.</p>
-      <p>
-        <a href="https://www.minecraft.net/en-us/terms" target="_blank">Правила використання Minecraft</a> |
-        <a href="https://www.minecraft.net/en-us/privacy" target="_blank">Керувати згодою</a>
-      </p>
+      <div class="footer-section">
+        <h4>Підтримка</h4>
+        <ul>
+          <li><a href="https://feedback.minecraft.net/hc/en-us/articles/360011793092-Feedback-Website-FAQ">FAQ</a></li>
+          <li><a href="https://www.minecraft.net/ru-ru/usage-guidelines">Правила використання Minecraft</a></li>
+          <li><a href="https://help.minecraft.net/hc/en-us/articles/4408904068621-Feedback-and-Fan-Mail">Зв’язатися з нами</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Магазин</h4>
+        <ul>
+          <li><a href="https://www.minecraft.net/en-us/marketplace/category/skin-packs">Скіни</a></li>
+          <li><a href="https://www.minecraft.net/en-us/marketplace/category/texture-packs">Текстур паки</a></li>
+          <li><a href="https://www.minecraft.net/en-us/marketplace/category/survival-spawns">Сервера</a></li>
+        </ul>
+      </div>
     </div>
+    <p class="footer-bottom">© 2025 Mojang AB. TM Microsoft Corporation.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
-
 </html>
